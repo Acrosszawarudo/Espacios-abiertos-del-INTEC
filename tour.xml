@@ -137,6 +137,8 @@
          scale="0.40"
          zoom="true"
          onclick="loadscene(EL_INTEC, null, MERGE, BLEND(1));" />
+
+
 </scene>
 
     <scene name="EL_INTEC" title="EL_INTEC" onstart="" thumburl="panos/EL_INTEC.tiles/thumb.jpg" lat="18.48786111" lng="-69.96252778" alt="30.10" heading="0.0">
@@ -196,7 +198,7 @@
         <hotspot name="GC_Cartel" 
                 url="images/GC_Cartel.png" 
                 scale="0.3" 
-                ath="144.1994361" atv="-3.0391305"
+                ath="129.1411932" atv="-2.0137506"
                 rx="0" ry="0" rz="0"
                 ox="0.0" oy="0.0"
                 tx="0" ty="0" tz="0"
@@ -235,20 +237,28 @@
             delayedcall(1, set(hotspot[GC_Info].visible, false));  
             delayedcall(1, set(hotspot[GC_Cartel].enabled, true)); 
         "/>
-        
 
+        <hotspot name="spot2"
+         url="images/target_green_white.png"
+         onloaded="do_crop_animation(128,128,60);"
+         visible="true"
+         ath="-102.3603098" atv="4.2446209"
+         scale="0.40"
+         zoom="true"
+         onclick="loadscene(CSD_INTEC, null, MERGE, BLEND(1));" />
+        
     </scene>
 
-    <scene name="scene_IMG_20250909_172709_00_021" title="IMG_20250909_172709_00_021" onstart="" thumburl="panos/IMG_20250909_172709_00_021.tiles/thumb.jpg" lat="18.48794444" lng="-69.96272222" alt="46.60" heading="0.0">
+    <scene name="CSD_INTEC" title="CSD_INTEC" onstart="" thumburl="panos/CSD_INTEC.tiles/thumb.jpg" lat="18.48794444" lng="-69.96272222" alt="46.60" heading="0.0">
         
         <control bouncinglimits="calc:image.cube ? true : false" />
 
         <view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-        <preview url="panos/IMG_20250909_172709_00_021.tiles/preview.jpg" />
+        <preview url="panos/CSD_INTEC.tiles/preview.jpg" />
 
         <image>
-            <cube url="panos/IMG_20250909_172709_00_021.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,1792" />
+            <cube url="panos/CSD_INTEC.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,1792" />
         </image>
 
         <hotspot name="CSD_Cartel" 
@@ -266,18 +276,27 @@
             set(hotspot[CSD_Cartel].visible, false);  
         "/>
 
+        <hotspot name="spot3"
+         url="images/target_green_white.png"
+         onloaded="do_crop_animation(128,128,60);"
+         visible="true"
+         ath="-83.8635646" atv="10.9857953"
+         scale="0.40"
+         zoom="true"
+         onclick="loadscene(Comedor_INTEC, null, MERGE, BLEND(1));" />
+
     </scene>
 
-    <scene name="scene_IMG_20250909_173258_00_022" title="IMG_20250909_173258_00_022" onstart="" thumburl="panos/IMG_20250909_173258_00_022.tiles/thumb.jpg" lat="18.48780556" lng="-69.96280556" alt="39.40" heading="0.0">
+    <scene name="Comedor_INTEC" title="Comedor_INTEC" onstart="" thumburl="panos/Comedor_INTEC.tiles/thumb.jpg" lat="18.48780556" lng="-69.96280556" alt="39.40" heading="0.0">
         
         <control bouncinglimits="calc:image.cube ? true : false" />
 
         <view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-        <preview url="panos/IMG_20250909_173258_00_022.tiles/preview.jpg" />
+        <preview url="panos/Comedor_INTEC.tiles/preview.jpg" />
 
         <image>
-            <cube url="panos/IMG_20250909_173258_00_022.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,1792" />
+            <cube url="panos/Comedor_INTEC.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,1792" />
         </image>
 
         <hotspot name="Comedor_Cartel" 
@@ -295,18 +314,27 @@
             set(hotspot[Comedor_Cartel].visible, false);   
         "/>
 
+        <hotspot name="spot4"
+         url="images/target_green_white.png"
+         onloaded="do_crop_animation(128,128,60);"
+         visible="true"
+         ath="-178.9468594" atv="2.3342061"
+         scale="0.40"
+         zoom="true"
+         onclick="loadscene(Final_INTEC, null, MERGE, BLEND(1));" />
+
     </scene>
 
-    <scene name="scene_IMG_20250909_173545_00_023" title="IMG_20250909_173545_00_023" onstart="" thumburl="panos/IMG_20250909_173545_00_023.tiles/thumb.jpg" lat="18.48780556" lng="-69.96288889" alt="48.00" heading="0.0">
+    <scene name="Final_INTEC" title="Final_INTEC" onstart="" thumburl="panos/Final_INTEC.tiles/thumb.jpg" lat="18.48780556" lng="-69.96288889" alt="48.00" heading="0.0">
         
         <control bouncinglimits="calc:image.cube ? true : false" />
 
         <view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
-        <preview url="panos/IMG_20250909_173545_00_023.tiles/preview.jpg" />
+        <preview url="panos/Final_INTEC.tiles/preview.jpg" />
 
         <image>
-            <cube url="panos/IMG_20250909_173545_00_023.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,1792" />
+            <cube url="panos/Final_INTEC.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,1792" />
         </image>
 
         <hotspot name="Final_Cartel" 
